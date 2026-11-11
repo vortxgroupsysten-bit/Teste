@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataGuard | Segurança Digital</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #101b32;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        header span {
+            color: #a5b4c9;
+            font-size: 13px;
+        }
+
+        main {
+            max-width: 650px;
+            margin: 45px auto;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .shield {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .intro h1 {
+            font-size: 30px;
+            margin-bottom: 12px;
+            color: #101b32;
+        }
+
+        .intro p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .form-card {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 8px 35px rgba(0,0,0,0.06);
+        }
+
+        .form-card h2 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            color: #64748b;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .field {
+            margin-bottom: 19px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #dbe2ea;
+            border-radius: 9px;
+            font-size: 14px;
+            outline: none;
+            transition: 0.2s;
+        }
+
+        input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37,99,235,0.10);
+        }
+
+        button {
+            width: 100%;
+            padding: 16px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 9px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        .notice {
+            text-align: center;
+            color: #64748b;
+            font-size: 12px;
+            margin-top: 22px;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 13px;
+            padding: 20px;
+        }
+
+        @media(max-width: 600px) {
+            main {
+                margin: 20px auto;
+            }
+
+            .form-card {
+                padding: 22px;
+            }
+
+            .intro h1 {
+                font-size: 25px;
+            }
+
+            header {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🛡️ DataGuard</div>
+        <span>Segurança Digital</span>
+    </header>
+
+    <main>
+
+        <div class="intro">
+            <div class="shield">🔐</div>
+
+            <h1>Seus dados foram vazados?</h1>
+
+            <p>
+                Preencha os campos para ver se seus dados
+                foram vazados.
+            </p>
+        </div>
+
+        <section class="form-card">
+
+            <h2>Formulário de verificação</h2>
+
+            <p class="description">
+                Preencha os campos abaixo usando apenas dados fictícios nesta demonstração.
+            </p>
+
+            <form autocomplete="off">
+
+                <div class="field">
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" type="text" placeholder="Digite um nome fictício">
+                </div>
+
+                <div class="field">
+                    <label for="mae">Nome da mãe</label>
+                    <input id="mae" type="text" placeholder="Digite um nome fictício">
+                </div>
+
+                <div class="field">
+                    <label for="pai">Nome do pai</label>
+                    <input id="pai" type="text" placeholder="Digite um nome fictício">
+                </div>
+
+                <div class="field">
+                    <label for="nascimento">Data de nascimento</label>
+                    <input id="nascimento" type="date">
+                </div>
+
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" placeholder="exemplo@teste.com">
+                </div>
+
+                <div class="field">
+                    <label for="cartao">Cartão fictício para demonstração</label>
+                    <input id="cartao" type="text" placeholder="XXXX XXXX XXXX XXXX"
+                           maxlength="19" inputmode="numeric">
+                </div>
+
+                <div class="field">
+                    <label for="endereco">Endereço completo</label>
+                    <input id="endereco" type="text" placeholder="Endereço fictício">
+                </div>
+
+                <div class="field">
+                    <label for="cidade">Cidade</label>
+                    <input id="cidade" type="text" placeholder="Cidade fictícia">
+                </div>
+
+                <div class="field">
+                    <label for="cep">CEP</label>
+                    <input id="cep" type="text" placeholder="00000-000">
+                </div>
+
+                <button type="button">
+                    🔍 Verificar dados
+                </button>
+
+                <p class="notice">
+                    🔒 Demonstração visual local. Não informe dados reais.
+                    Esta página não consulta, envia ou armazena informações.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 DataGuard - Demonstração de Segurança Digital
+    </footer>
+
+</body>
+</html>
